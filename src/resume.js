@@ -65,7 +65,7 @@ export default class Resume extends React.Component{
             {ResumeData.projectsData.map((project) => (
               <li key={project.id}>
                 <div>
-                  <h3>{project.title}</h3>
+                  <h3><a href={project.link} target='_blank' rel="noopener noreferrer">{project.title}</a></h3>
                   <p>{project.period}</p>
                 </div>
                 <div>
@@ -134,8 +134,16 @@ export default class Resume extends React.Component{
 
 const AboutBox = styled.div`
   a {
+    display:inline-block;
+    padding:4px 6px;
+    text-decoration:none !important;
     color:#a590ff !important;
-    text-decoration:underline !important;
+    box-shadow: inset 0px -0.1rem 0 0 #a590ff;
+    transition: box-shadow 0.2s;
+    &:hover{
+      box-shadow: inset 0 -2.5rem 0 0 #a590ff;
+      color:#fff !important;
+    }
   }
   padding: 8.898895vw 5.26593vw 8.898895vw;
   @media screen and (max-width : 1024px) {
