@@ -6,6 +6,7 @@ import Article from './Article'
 import Scrollbar from './choiceScroll'
 import ArticleView from './ArticleView'
 
+
 export default class Articles extends Component {
   state = {
     viewIsOpen : false,
@@ -57,7 +58,7 @@ export default class Articles extends Component {
           ))}
         </ArticleBox>
       </HorizontalScroll>
-      {this.state.viewIsOpen && <ArticleView view={this.state.viewIsOpen} viewContent={this.state.viewContent} viewIsClose={this._viewIsClose}/>}
+        {this.state.viewIsOpen && <ArticleView view={this.state.viewIsOpen} viewContent={this.state.viewContent} viewIsClose={this._viewIsClose}/>}
       </React.Fragment>
     );
   }
