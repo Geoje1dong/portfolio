@@ -119,6 +119,15 @@ const ArticleBox = styled.ul`
     }
     &:nth-child(2){
       > button >img{
+        height:500px;
+        width:auto;
+        @media screen and (max-width : 425px) {
+          height:50vh;
+        }
+      }
+    }
+    &:nth-child(3){
+      > button >img{
         height:560px;
         width:auto;
         @media screen and (max-width : 425px) {
@@ -126,7 +135,7 @@ const ArticleBox = styled.ul`
         }
       }
     }
-    &:nth-child(4){
+    &:nth-child(5){
       > button >img{
         @media screen and (max-width : 425px) {
           max-width:260px;
