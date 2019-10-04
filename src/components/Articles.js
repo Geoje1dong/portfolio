@@ -42,14 +42,14 @@ export default class Articles extends Component {
       <React.Fragment>
       <HorizontalScroll className="horizontalScroll">
         <ArticleBox className={this.state.articlesFadeIn}>
-          <li>
+          {/* <li>
             <div>
               <p>안녕하세요 <strong>김재현</strong> 입니다.</p>
               <p>저의 <strong>포트폴리오</strong>에 오신것을 환영합니다.</p>
-              {/* <p>실용적이고 유용하며 아름다운 제품을 만들기 위해 많은 작업물을 보며 공부하고 있습니다.</p> */}
+              <p>실용적이고 유용하며 아름다운 제품을 만들기 위해 많은 작업물을 보며 공부하고 있습니다.</p>
               
             </div>
-          </li>
+          </li> */}
           {workData.results.map((article) => (
             <StyledArticle key={article.id} delay={article.id}>
               <Article article={article} viewIsOpen={this._viewIsOpen(article)}/>
@@ -103,21 +103,22 @@ const ArticleBox = styled.ul`
     transform: translateX(700px);
     padding:1vw 5.26593vw;
     display: flex;
-    &:first-child{
-      align-items: flex-start;
-      transition:all 0.9s cubic-bezier(0.455,0.03,0.515,0.955);
-      >div{
-        width:340px;
-        padding-top:5.26593vw;
-        > p{
-          font-size: 1.2125rem;
-          line-height: 1.7em;
-          margin: 0 0.2em;
-          font-weight: 200;
-        }
-      }
-    }
-    &:nth-child(2){
+    // &:first-child{
+    //   align-items: flex-start;
+    //   transition:all 0.9s cubic-bezier(0.455,0.03,0.515,0.955);
+    //   >div{
+    //     width:340px;
+    //     padding-top:5.26593vw;
+    //     > p{
+    //       font-size: 1.2125rem;
+    //       line-height: 1.7em;
+    //       margin: 0 0.2em;
+    //       font-weight: 200;
+    //     }
+    //   }
+    // }
+    &:nth-child(1){
+      margin-left:100px;
       > button >img{
         height:500px;
         width:auto;
@@ -126,7 +127,7 @@ const ArticleBox = styled.ul`
         }
       }
     }
-    &:nth-child(3){
+    &:nth-child(2){
       > button >img{
         height:560px;
         width:auto;
@@ -135,7 +136,7 @@ const ArticleBox = styled.ul`
         }
       }
     }
-    &:nth-child(5){
+    &:nth-child(4){
       > button >img{
         @media screen and (max-width : 425px) {
           max-width:260px;
