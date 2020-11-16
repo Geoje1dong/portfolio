@@ -135,7 +135,7 @@ export default class Resume extends React.Component{
 const AboutBox = styled.div`
   a {
     display:inline-block;
-    padding:4px 6px;
+    // padding:4px 6px;
     text-decoration:none !important;
     color:#fff !important;
     box-shadow: inset 0px -0.1rem 0 0 #fff;

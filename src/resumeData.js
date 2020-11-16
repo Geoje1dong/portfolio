@@ -24,13 +24,7 @@ const resumeData = {
       title:'한국산업정보사',
       period:'2015.10 ~ 2016.05',
       description:['기업 홈페이지 제작 및 유지 보수', '기업 홈페이지 템플릿 제작']
-    },
-    {
-      id:3,
-      title:'USSOFT',
-      period:'2014.07 ~ 2015.07',
-      description:['모바일 페이지 제작 및 유지 보수', '모바일 페이지 템플릿 제작']
-    },
+    }
   ],
   "projectsData" : [
     {
@@ -59,45 +53,6 @@ const resumeData = {
       techstack:'HTML5, CSS3, Bootstrap, Jquery, Sketch',
       result:'부트스트랩이나 자바스크립트에 익숙하지않아서 제대로 활용하지 못한게 아쉬웠습니다.\n이 프로젝트를 계기로 프론트엔드 기술 학습의 필요성을 느꼈고 진행하고 있습니다.',
       link:'http://partner.rengo.co.kr/'
-    },
-    {
-      id:4,
-      title:'대항길병원',
-      period:'2016.03  ~ 2016.04',
-      description:'그누보드를 이용한 대항길병원 홍보 PC, Mobile 화면 개발',
-      contribution:[
-        'Pc, Mobile 마크업 작업',
-        '그누보드를 이용한 cms 설치',
-      ],
-      techstack:'HTML5, CSS3, 그누보드',
-      result:'그누보드를 사용함으로써 오픈소스에 대한 이해도를 가졌습니다.',
-      link:'http://www.daehanggil.co.kr/'
-    },
-    {
-      id:5,
-      title:'금호마린테크',
-      period:'2016.01  ~ 2016.02',
-      description:'선박용 전자장비기업 금호마린테크 기업용 홍보 페이지 리뉴얼 작업',
-      contribution:[
-        'Pc, Mobile 마크업 작업'
-      ],
-      techstack:'HTML5, CSS3, 그누보드',
-      result:'css를 이용한 레이아웃 작업에 대한 이해도가 증가하였습니다.',
-      link:'http://www.kumhomarine.com/'
-    },
-    {
-      id:6,
-      title:'전국금속노동조합 현대자동차지부',
-      period:'2015.05  ~ 2015.05',
-      description:'전국금속노동조합 현대자동차지부 소식지 모바일 홈페이지 구축',
-      contribution:[
-        '포토샵툴을 이용한 프로토 타입 제작',
-        '포토샵 타임라인을 활용한 메인 애니메이션 제작',
-        'Mobile 마크업 작업'
-      ],
-      techstack:'HTML5, CSS3, Photoshop',
-      result:'메인 애니메이션 효과를 주기 위해 알아보던중 Gif 이미지 제작 햐였고 Gif가 아닌 웹에서 작동 하는 애니메이션을 만들기 위해 css를 좀더 공부하게 된 계기가 되었습니다.',
-      link:'http://www.kumhomarine.com/'
     },
     {
       id:2,
