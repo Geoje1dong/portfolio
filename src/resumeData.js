@@ -82,7 +82,20 @@ const resumeData = {
       ],
       techstack:'react, next, redux, redux-saga, styled-component, express, sequelize',
       result:'처음부터 끝까지 인강을 보며 제작 하였습니다.\nredux, express, sequelize 이해도가 낮아 조금더 공부를 하며 점점더 업데이트 해갈 생각입니다.\n초기구동 속도에 대한 해결 방안을 조금더 찾아봐야 할것 같습니다.',
-      link:''
+      link:'https://github.com/Geoje1dong/zeroSNS'
+    },
+    {
+      id:4,
+      title:'인플루언서 개인 프로젝트',
+      period:'2020.01 ~ 진행중',
+      description:'react를 조금더 손에 익기 위해 만들게 된 개인 프로젝트 입니다.\n인스타그램 크롤링을 통해 인플루언서 데이터를 보여줍니다.',
+      contribution:[
+        'UI 설계 및 구현',
+        '구현중'
+      ],
+      techstack:'react, python, selenium',
+      result:'restAPI를 좀더 공부하기 위해 프로젝트를 진행중입니다.\n아직은 UI구현만 되어 있고 업데이트 하겠습니다.',
+      link:'http://34.64.172.36/'
     }
   ],
   skillsData:[
