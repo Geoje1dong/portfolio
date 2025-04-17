@@ -87,16 +87,140 @@ const resumeData = {
     {
       id:4,
       title:'인플루언서 개인 프로젝트',
-      period:'2020.01 ~ 진행중',
+      period:'2020.01 ~ 2020.02',
       description:'react를 조금더 손에 익기 위해 만들게 된 개인 프로젝트 입니다.\n인스타그램 크롤링을 통해 인플루언서 데이터를 보여줍니다.',
       contribution:[
         'UI 설계 및 구현',
         '구현중'
       ],
       techstack:'react, python, selenium',
-      result:'restAPI를 좀더 공부하기 위해 프로젝트를 진행중입니다.\n아직은 UI구현만 되어 있고 업데이트 하겠습니다.',
-      link:'http://34.64.172.36/'
+      result:'restAPI를 좀더 공부하기 위해 프로젝트를 진행중입니다.',
+    },
+    {
+      id:13,
+      title:'오늘집밥',
+      period:'2021.07 ~ 2024.09',
+      description:'사진/영상 업로드, 위치기반 뚜벅배송, 나눔, 배달, 동네 결제, 밀키트 결제 및 셀러 정산이 가능한 플렛폼입니다.',
+      contribution:[
+        '데빌앱 빌더를 이용한 앱 UI 구현',
+        '관리자 페이지 구현',
+        '운영 유지 보수'
+      ],
+      techstack:'HTML5, CSS3, JavaScript, Vue, React, Node, Mongo DB, Devil App Builder',
+      result:'오늘집밥 팀에 합류하여 앱 제작 및 운영을 담당하였으며, Devil App Builder를 활용한 앱 UI 구현과 React Admin을 이용한 관리자 페이지 개발을 수행했습니다. MongoDB를 활용하여 데이터베이스 관리를 하고, 다양한 기능을 구현하여 운영을 지원했습니다.',
+      link:'https://apps.apple.com/kr/app/%EC%98%A4%EB%8A%98%EC%A7%91%EB%B0%A5/id1591164613'
+    },
+    {
+      id:5,
+      title:'광화시대',
+      period:'2021.11 ~ 2022.01',
+      description:'광화문 지역 소개 및 문화컨텐츠 예약 서비스',
+      contribution:[
+        '웹페이지 UI 구현',
+        '영어, 중국어, 일본어, 한국어 i18n으로 다국어 처리',
+        '운영 유지 보수'
+      ],
+      techstack:'HTML5, CSS3, JavaScript, Vue, React, Node, Mongo DB, Devil App Builder',
+      result:'광화시대 프로젝트를 진행하면서 다국어 처리와 관련된 i18n 기술을 처음 접하게 되었고, 이를 통해 다양한 언어를 지원하는 웹 애플리케이션을 구축하는 데 큰 경험을 쌓았습니다. 또한, 웹페이지 UI 구현을 통해 실제 사용자 경험을 고려한 디자인을 하게 되었고, 운영 유지보수 과정에서 발생한 문제를 해결하면서 실시간 서비스 운영에 대한 이해도를 높였습니다. 이 프로젝트를 통해 프론트엔드 개발의 중요성과 함께, 다국어 지원을 통해 글로벌 서비스를 제공하는 방법을 배울 수 있었습니다.',
+      // link:'https://apps.apple.com/kr/app/%EC%98%A4%EB%8A%98%EC%A7%91%EB%B0%A5/id1591164613'
+    },
+    {
+      id:6,
+      title:'발란 매장시스템',
+      period:'2022.06 ~ 2022.09',
+      description:'여의도 IFC 발란 매장 관리 시스템 구축',
+      contribution:[
+        '매장 오프라인 픽업 기능 개발 참여',
+        '매장 스마트 피팅룸 관리자 기능 개발 참여',
+      ],
+      techstack:'HTML5, CSS3, JavaScript, Vue, React, Node, Mongo DB',
+      result:'',
+      // link:'https://apps.apple.com/kr/app/%EC%98%A4%EB%8A%98%EC%A7%91%EB%B0%A5/id1591164613'
+    },
+    {
+      id:7,
+      title:'나의 조경',
+      period:'2022.09 ~ 2022.11',
+      description:'조경사와 소비자와의 C2C 플랫폼',
+      contribution:[
+        '데빌앱 빌더를 이용한 앱 UI 구현',
+        '소비자, 조경사 견적 제시 시스템 개발',
+        '소비자, 조경사 상호간에 작업 리뷰 개발',
+      ],
+      techstack:'HTML5, CSS3, JavaScript, Devil App Builder, Vue, React, Node, Mongo DB',
+      // result:'견적을 제시하고',
+      // link:'https://apps.apple.com/kr/app/%EC%98%A4%EB%8A%98%EC%A7%91%EB%B0%A5/id1591164613'
+    },
+    {
+      id:8,
+      title:'SKC인프라서비스 그룹웨어 모바일 버전',
+      period:'2022.07 ~ 2022.10',
+      description:'SKC인프라서비스 그룹웨어의 모바일 버전이며, 정류기, 중계기에 대한 입고, 출고, 정산 조회 등을 할수 있습니다 안드로이드는 내부망에 배포되었으며, 아이폰은 스토어에 배포되었습니다',
+      contribution:[
+        '데빌앱 빌더를 이용한 앱 UI 구현',
+        '정류기 중계기 입고, 출고, 정산 조회 기능 개발',
+      ],
+      techstack:'Devil App Builder, Node, Ms Sql',
+      result:'',
+      link:'https://apps.apple.com/us/app/skc%EC%9D%B8%ED%94%84%EB%9D%BC%EC%84%9C%EB%B9%84%EC%8A%A4/id1636833180'
+    },
+    {
+      id:9,
+      title:'한국의출렁다리',
+      period:'2023.10 ~ 2024.10',
+      description:'출렁다리의 재원, 정보, 위치를 소개하고 리뷰와 댓글을 입력할 수 있습니다. 정보 수정 요청을 통해 직접 정보를 수정할 수 있어요',
+      contribution:[
+        '데빌앱 빌더를 이용한 앱 UI 구현',
+        '관리자 페이지 구현',
+      ],
+      techstack:'HTML5, CSS3, JavaScript, Devil App Builder, React, Node, Mongo DB',
+      result:'',
+      link:'https://apps.apple.com/kr/app/%ED%95%9C%EA%B5%AD%EC%9D%98-%EC%B6%9C%EB%A0%81%EB%8B%A4%EB%A6%AC/id6468844300'
+    },
+    {
+      id:10,
+      title:'슬기로운금은방',
+      period:'2023.10 ~ 2024.10',
+      description:'종로 중심의 금은방 추천매장, 정찰공임비, 시세계산기, 추천매장 등 리얼 후기 중심의 플랫폼',
+      contribution:[
+        '데빌앱 빌더를 이용한 앱 UI 구현',
+        '관리자 페이지 구현',
+        '매장 리스트 및 매장 리뷰 개발'
+      ],
+      techstack:'HTML5, CSS3, JavaScript, Devil App Builder, React, Node, Mongo DB',
+      result:'',
+      link:'https://apps.apple.com/kr/app/%EC%8A%AC%EA%B8%B0%EB%A1%9C%EC%9A%B4-%EA%B8%88%EC%9D%80%EB%B0%A9/id1549620853'
+    },
+    {
+      id:11,
+      title:'용병구함',
+      period:'2023.07 ~ 2025.01',
+      description:'축구 용병 경기 생성, 매칭, 후기 평가',
+      contribution:[
+        '데빌앱 빌더를 이용한 앱 UI 구현',
+        '관리자 페이지 구현',
+        '용병 경기 리스트, 경기 참여 기능 개발',
+        '경기 후 상대 매너 평가 기능 개발',
+      ],
+      techstack:'HTML5, CSS3, JavaScript, Devil App Builder, React, Node, Mongo DB',
+      result:'',
+      link:'https://apps.apple.com/kr/app/%EC%9A%A9%EB%B3%91%EA%B5%AC%ED%95%A8/id6465694662'
+    },
+    {
+      id:15,
+      title:'사커비팀',
+      period:'2023.07 ~ 2025.01',
+      description:'축구 용병 경기 생성, 매칭, 후기 평가',
+      contribution:[
+        '경기 분석 상세 페이지 구현',
+        '경기 대시보드 페이지 구현',
+        '경기 분석 내용 csv export 구현',
+      ],
+      techstack:'HTML5, CSS3, JavaScript, React, Node, Mongo DB',
+      result:'',
+      link:'https://www.soccerbee.xyz/auth/jwt/login?returnTo=%2Fteam%2Fdetail'
     }
+
   ],
   skillsData:[
     {
@@ -121,7 +245,9 @@ const resumeData = {
       title:'JavaScript',
       description:[
         'DOM API를 다루는데 능숙합니다.',
-        'ES2015 이후의 자바스크립트 문법을 사용하기 위해 공부하고 있습니다.'
+        'ES2015 이후의 자바스크립트 문법을 사용하기 위해 공부하고 있습니다.',
+        '비동기 처리를 이해하고 있으며, 이를 이용한 효율적인 코드 작성이 가능합니다.',
+        'JavaScript 프레임워크 및 라이브러리(React, Vue 등) 사용 경험이 있습니다.'
       ]
     },
     // {

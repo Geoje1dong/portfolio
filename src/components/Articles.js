@@ -120,7 +120,7 @@ const ArticleBox = styled.ul`
     &:nth-child(1){
       margin-left:100px;
       > button >img{
-        height:500px;
+        height:auto;
         width:auto;
         @media screen and (max-width : 425px) {
           height:50vh;
@@ -129,7 +129,7 @@ const ArticleBox = styled.ul`
     }
     &:nth-child(2){
       > button >img{
-        height:560px;
+        height:auto;
         width:auto;
         @media screen and (max-width : 425px) {
           height:50vh;

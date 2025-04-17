@@ -71,7 +71,16 @@ export default class ArticleView extends React.Component{
             <p>{viewContent.content[0].header_h2}</p> */}
           </div>
           <div></div>
-          <ViewHeaderImg backgroundImage={viewContent.content[0].header_img}/>
+          <ViewHeaderImg 
+            backgroundImage={viewContent.content[0].header_img}
+            isVideo={viewContent.content[0] && viewContent.content[0].header_img && viewContent.content[0].header_img.endsWith('.mp4')}
+          >
+            {viewContent.content[0] && viewContent.content[0].header_img && viewContent.content[0].header_img.endsWith('.mp4') && (
+              <video autoPlay loop muted playsInline>
+                <source src={viewContent.content[0].header_img} type="video/mp4" />
+              </video>
+            )}
+          </ViewHeaderImg>
         </ViewHeader>
         <ViewCloseButton onClick={this.handleClick}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59.4 59.4"><path d="M29.7 45.3L0 15.6l1.4-1.5 28.3 28.3L58 14.1l1.4 1.5z"/></svg></ViewCloseButton>
         <ViewContentBox className="view">
@@ -127,18 +136,23 @@ export default class ArticleView extends React.Component{
               </IntroText>
             </IntroBox>
             <section>
-              {viewContent.content[0].section_imges.map((img, index) => (
+              {viewContent.content[0].imgType === 1 && <ContentImgType1 viewContent={viewContent}/>}
+              {!viewContent.content[0].imgType && (
                 <>
-                  <img src={img.imgUrl} alt={img.Alt}  key={index}/>
+                  {viewContent.content[0].section_imges.map((img, index) => (
+                    <>
+                      <img src={img.imgUrl} alt={img.Alt}  key={index}/>
+                    </>
+                  ))}
+                  {viewContent.content[0].check}
+                  {viewContent.content[0].weeklyUi.map((weekly, index) => (
+                    <WeeklyUI target="_blank" href={weekly.link} rel="noopener noreferrer" key={index}>
+                      <img src={weekly.imgUrl} alt={weekly.imgTit}/>
+                      <p>{weekly.imgTit}</p>
+                    </WeeklyUI>
+                  ))}
                 </>
-              ))}
-              {viewContent.content[0].check}
-              {viewContent.content[0].weeklyUi.map((weekly, index) => (
-                <WeeklyUI target="_blank" href={weekly.link} rel="noopener noreferrer" key={index}>
-                  <img src={weekly.imgUrl} alt={weekly.imgTit}/>
-                  <p>{weekly.imgTit}</p>
-                </WeeklyUI>
-              ))}
+              )}
             </section>
           </ViewContent>
         </ViewContentBox>
@@ -149,6 +163,61 @@ export default class ArticleView extends React.Component{
     )
   }
 }
+
+const ContentImgType1 = ({ viewContent }) => {
+  return (
+    <ImgType1Content>
+      <ContentUl>
+        {viewContent.content[0].section_imges.map((img, index) => (
+          <ContentLi key={index}>
+
+            {img.type === 'video' ? (
+              <video autoPlay loop muted playsInline>
+                <source src={img.imgUrl} type="video/mp4" />
+              </video>
+            ) : (
+            <img src={img.imgUrl} alt={img.imgAlt} />
+            )}
+          </ContentLi>
+        ))}
+        
+      </ContentUl>
+    </ImgType1Content>
+  );
+};
+
+const ContentUl = styled.ul`
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  list-style-type: none;
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+`
+
+const ContentLi = styled.li`
+  margin-right: 20px;
+  display: inline-block;
+  video{
+    width: 100%;
+    height: auto;
+  }
+`
+
+const ImgType1Content = styled.div`
+  margin-top: 100px;
+  text-align: left;
+  display: inline-block;
+  overflow: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
+`
 
 const WeeklyUI = styled.a`
   display:block;
@@ -338,7 +407,6 @@ const BlankBox = styled.div`
 `
 
 const ViewHeaderImg = styled.div`
-  background-image:url(${props => props.backgroundImage});
   position:absolute;
   top:50%;
   left:50%;
@@ -352,6 +420,22 @@ const ViewHeaderImg = styled.div`
   background-size:cover;
   background-position:center;  
   transform:translate(-50%, -50%);
+  background-image: ${props => props.isVideo ? 'none' : `url(${props.backgroundImage})`};
+  background-color: ${props => props.isVideo ? 'transparent' : 'rgba(0,0,0,0.25)'};
+  background-blend-mode: ${props => props.isVideo ? 'normal' : 'multiply'};
+  background-size: cover;
+  background-position: center;
+  filter: ${props => props.isVideo ? 'none' : 'blur(10px)'};
+    video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    filter: blur(10px);
+  }
 `
 
 const ViewHeader = styled.div`

@@ -1,5 +1,350 @@
+import kwangCover from './assets/images/kwang/cover.png';
+import kwangMain from './assets/images/kwang/219.mp4';
+import kwangDetail1 from './assets/images/kwang/151.png';
+import kwangDetail2 from './assets/images/kwang/152.png';
+import kwangDetail3 from './assets/images/kwang/153.png';
+import kwangDetail4 from './assets/images/kwang/154.png';
+import balaanCover from './assets/images/balaan/280.png';
+import balaanMain from './assets/images/balaan/main.jpg';
+import balaanDetail1 from './assets/images/balaan/282.png';
+import balaanDetail2 from './assets/images/balaan/283.png';
+import balaanDetail3 from './assets/images/balaan/284.png';
+import forestCover from './assets/images/forest/287.png';
+import forestMain from './assets/images/forest/main.jpg';
+import forestDetail1 from './assets/images/forest/285.png';
+import forestDetail2 from './assets/images/forest/289.png';
+import forestDetail3 from './assets/images/forest/290.png';
+import forestDetail4 from './assets/images/forest/291.png';
+import skcCover from './assets/images/skc/cover.png';
+import skcDetail1 from './assets/images/skc/275.png';
+import skcDetail2 from './assets/images/skc/276.png';
+import skcDetail3 from './assets/images/skc/277.png';
+import skcDetail4 from './assets/images/skc/278.png';
+import bridgeCover from './assets/images/bridge/384.png';
+import bridgeMain from './assets/images/bridge/main.jpg';
+import bridgeDetail1 from './assets/images/bridge/381.png';
+import bridgeDetail2 from './assets/images/bridge/383.png';
+import bridgeDetail3 from './assets/images/bridge/386.png';
+import bridgeDetail4 from './assets/images/bridge/387.png';
+import goldCover from './assets/images/gold/358.png';
+import goldMain from './assets/images/gold/main.jpg';
+import goldDetail1 from './assets/images/gold/361.png';
+import goldDetail2 from './assets/images/gold/362.png';
+import goldDetail3 from './assets/images/gold/363.png';
+import goldDetail4 from './assets/images/gold/364.png';
+import yongCover from './assets/images/yong/cover.png';
+import yongMain from './assets/images/yong/main.png';
+import yongDetail1 from './assets/images/yong/378.png';
+import yongDetail2 from './assets/images/yong/375.png';
+import yongDetail3 from './assets/images/yong/373.png';
+import yongDetail4 from './assets/images/yong/379.png';
+import todayCover from './assets/images/today/cover.png';
+import todayMain from './assets/images/today/218.mp4';
+import todayDetail1 from './assets/images/today/15.png';
+import todayDetail2 from './assets/images/today/16.png';
+import todayDetail3 from './assets/images/today/17.png';
+
 const workData = {
   "results" :[
+    {
+      "id" : "1",
+      "title" : "오늘집밥",
+      "label" : "App",
+      "img" : todayCover,
+      "content" : [
+        {
+          "header_h1" : "오늘집밥",
+          "header_h2" : "2021.07 ~ 2024.09",
+          "header_img" : todayCover,
+          "description" : "축사진/영상 업로드, 위치 기반 뚜벅배송, 나눔, 배달, 동네 결제, 밀키트 결제 및 셀러 정산 기능을 제공하는 플랫폼입니다.",
+          "clist" : ["JavaScript", "Devil App Builder", "React", "Node", "Mongo DB"],
+          "url" : "",
+          "imgSize" : true,
+          "imgType": 1,
+          "section_background" : "#f5f5f5",
+          "section_imges" : [
+            {
+              "imgUrl" : todayMain,
+              "imgAlt" : '오늘집밥 이미지',
+              "type" : 'video'
+            },
+            {
+              "imgUrl" : todayDetail1,
+              "imgAlt" : '오늘집밥 이미지'
+            },
+            {
+              "imgUrl" : todayDetail2,
+              "imgAlt" : '오늘집밥 이미지'
+            },
+            {
+              "imgUrl" : todayDetail3,
+              "imgAlt" : '오늘집밥 이미지'
+            }
+          ],
+        }
+      ]
+    },
+    {
+      "id" : "1",
+      "title" : "용병구함",
+      "label" : "App",
+      "img" : yongCover,
+      "cover_type" : "logo",
+      "content" : [
+        {
+          "header_h1" : "용병구함",
+          "header_h2" : "2023.07 ~ 2025.01",
+          "header_img" : yongMain,
+          "description" : "축구 용병 경기 생성, 매칭, 후기 평가",
+          "clist" : ["JavaScript", "Devil App Builder", "React", "Node", "Mongo DB"],
+          "url" : "",
+          "imgSize" : true,
+          "imgType": 1,
+          "section_background" : "#f5f5f5",
+          "section_imges" : [
+            {
+              "imgUrl" : yongDetail1,
+              "imgAlt" : '용병구함 이미지'
+            },
+            {
+              "imgUrl" : yongDetail2,
+              "imgAlt" : '용병구함 이미지'
+            },
+            {
+              "imgUrl" : yongDetail3,
+              "imgAlt" : '용병구함 이미지'
+            },
+            {
+              "imgUrl" : yongDetail4,
+              "imgAlt" : '용병구함 이미지'
+            }
+          ],
+        }
+      ]
+    },
+    {
+      "id" : "1",
+      "title" : "슬기로운금은방",
+      "label" : "App",
+      "img" : goldCover,
+      // "cover_type" : "logo",
+      "content" : [
+        {
+          "header_h1" : "슬기로운금은방",
+          "header_h2" : "2022.07 ~ 2022.10",
+          "header_img" : goldMain,
+          "description" : "종로 중심의 금은방 추천매장, 정찰공임비, 시세계산기, 추천매장 등 리얼 후기 중심의 플랫폼",
+          "clist" : ["JavaScript", "Devil App Builder", "React", "Node", "Mongo DB"],
+          "url" : "",
+          "imgSize" : true,
+          "imgType": 1,
+          "section_background" : "#f5f5f5",
+          "section_imges" : [
+            {
+              "imgUrl" : goldDetail1,
+              "imgAlt" : '슬기로운금은방 이미지'
+            },
+            {
+              "imgUrl" : goldDetail2,
+              "imgAlt" : '슬기로운금은방 이미지'
+            },
+            {
+              "imgUrl" : goldDetail3,
+              "imgAlt" : '슬기로운금은방 이미지'
+            },
+            {
+              "imgUrl" : goldDetail4,
+              "imgAlt" : '슬기로운금은방 이미지'
+            }
+          ],
+        }
+      ]
+    },
+    {
+      "id" : "1",
+      "title" : "한국의출렁다리",
+      "label" : "App",
+      "img" : bridgeCover,
+      // "cover_type" : "logo",
+      "content" : [
+        {
+          "header_h1" : "한국의출렁다리",
+          "header_h2" : "2022.07 ~ 2022.10",
+          "header_img" : bridgeMain,
+          "description" : "출렁다리의 재원, 정보, 위치를 소개하고 리뷰와 댓글을 입력할 수 있습니다. 정보 수정 요청을 통해 직접 정보를 수정할 수 있어요. 또한, 출렁다리의 위치를 지도에서",
+          "clist" : ["JavaScript", "Devil App Builder", "React", "Node", "Mongo DB"],
+          "url" : "",
+          "imgSize" : true,
+          "imgType": 1,
+          "section_background" : "#f5f5f5",
+          "section_imges" : [
+            {
+              "imgUrl" : bridgeDetail1,
+              "imgAlt" : '한국의출렁다리 이미지'
+            },
+            {
+              "imgUrl" : bridgeDetail2,
+              "imgAlt" : '한국의출렁다리 이미지'
+            },
+            {
+              "imgUrl" : bridgeDetail3,
+              "imgAlt" : '한국의출렁다리 이미지'
+            },
+            {
+              "imgUrl" : bridgeDetail4,
+              "imgAlt" : '한국의출렁다리 이미지'
+            }
+          ],
+        }
+      ]
+    },
+    {
+      "id" : "1",
+      "title" : "SKC인프라서비스 그룹웨어 모바일 버전",
+      "label" : "App",
+      "cover_type" : "logo",
+      "img" : skcCover,
+      "content" : [
+        {
+          "header_h1" : "SKC인프라서비스 그룹웨어 모바일 버전",
+          "header_h2" : "2022.07 ~ 2022.10",
+          "header_img" : skcCover,
+          "description" : "SKC인프라서비스 그룹웨어의 모바일 버전이며, 정류기, 중계기에 대한 입고, 출고, 정산 조회 등을 할수 있습니다 안드로이드는 내부망에 배포되었으며, 아이폰은 스토어에 배포되었습니다",
+          "clist" : ["Devil App Builder", "Node", "Ms Sql"],
+          "url" : "",
+          "imgSize" : true,
+          "imgType": 1,
+          "section_background" : "#f5f5f5",
+          "section_imges" : [
+            {
+              "imgUrl" : skcDetail1,
+              "imgAlt" : 'SKC인프라서비스 그룹웨어 모바일 버전 이미지'
+            },
+            {
+              "imgUrl" : skcDetail2,
+              "imgAlt" : 'SKC인프라서비스 그룹웨어 모바일 버전 이미지'
+            },
+            {
+              "imgUrl" : skcDetail3,
+              "imgAlt" : 'SKC인프라서비스 그룹웨어 모바일 버전 이미지'
+            },
+            {
+              "imgUrl" : skcDetail4,
+              "imgAlt" : 'SKC인프라서비스 그룹웨어 모바일 버전 이미지'
+            }
+          ],
+        }
+      ]
+    },
+    {
+      "id" : "1",
+      "title" : "나의 조경",
+      "label" : "App",
+      "cover_type" : "logo",
+      "img" : forestCover,
+      "content" : [
+        {
+          "header_h1" : "나의 조경",
+          "header_h2" : "2022.09 ~ 2022.11",
+          "header_img" : forestMain,
+          "description" : "공급자인 조경사와 소비자 간의 C2C 플랫폼으로, 조경사는 견적을 제시하고 소비자는 이를 채택하는 방식입니다. 소비자와 조경사 간에는 작업 후 리뷰를 작성하여 서로의 포트폴리오를 관리하고 별점을 부여합니다.",
+          "clist" : ["JavaScript", "Devil App Builder", "React", "Node", "Mongo DB"],
+          "url" : "",
+          "imgSize" : true,
+          "imgType": 1,
+          "section_imges" : [
+            {
+              "imgUrl" : forestDetail1,
+              "imgAlt" : '나의 조경 이미지'
+            },
+            {
+              "imgUrl" : forestDetail2,
+              "imgAlt" : '나의 조경 이미지'
+            },
+            {
+              "imgUrl" : forestDetail3,
+              "imgAlt" : '나의 조경 이미지'
+            },
+            {
+              "imgUrl" : forestDetail4,
+              "imgAlt" : '나의 조경 이미지'
+            }
+          ],
+        }
+      ]
+    },
+    {
+      "id" : "1",
+      "title" : "발란 매장시스템",
+      "label" : "System Management",
+      "img" : balaanCover,
+      "content" : [
+        {
+          "header_h1" : "발란 매장시스템",
+          "header_h2" : "2022.06 ~ 2022.09",
+          "header_img" : balaanMain,
+          "description" : "여의도 IFC 발란 매장 관리 시스템 구축",
+          "clist" : ["HTML5", "CSS3", "JavaScript", "React", "Node", "Mongo DB"],
+          "url" : "",
+          "imgSize" : true,
+          "imgType": 1,
+          "section_imges" : [
+            {
+              "imgUrl" : balaanDetail1,
+              "imgAlt" : '발란 매장시스템 이미지'
+            },
+            {
+              "imgUrl" : balaanDetail2,
+              "imgAlt" : '발란 매장시스템 이미지'
+            },
+            {
+              "imgUrl" : balaanDetail3,
+              "imgAlt" : '발란 매장시스템 이미지'
+            }
+          ],
+        }
+      ]
+    },
+    {
+      "id" : "1",
+      "title" : "광화시대",
+      "label" : "Web",
+      "img" : kwangCover,
+      "content" : [
+        {
+          "header_h1" : "광화시대",
+          "header_h2" : "2021.11 ~ 2022.01",
+          "header_img" : kwangMain,
+          "description" : "광화시대는 다양한 실감 콘텐츠를 제공하는 문화 플랫폼입니다. 광화문 지역과 그 주변의 문화체험을 예약할 수 있는 서비스를 제공합니다. (광화원, 광화인, 광화전차 등 방문 예약이 가능한 플랫폼입니다.)",
+          "clist" : ["HTML5", "CSS3", "JavaScript", "Vue", "React", "Node", "Mongo DB"],
+          "url" : "",
+          "imgSize" : true,
+          "imgType": 1,
+          "section_imges" : [
+            {
+              "imgUrl" : kwangMain,
+              "imgAlt" : '광화시대 이미지',
+              "type" : 'video'
+            },
+            {
+              "imgUrl" : kwangDetail1,
+              "imgAlt" : '광화시대 이미지'
+            },
+            {
+              "imgUrl" : kwangDetail2,
+              "imgAlt" : '광화시대 이미지'
+            },
+            {
+              "imgUrl" : kwangDetail3,
+              "imgAlt" : '광화시대 이미지'
+            },{
+              "imgUrl" : kwangDetail4,
+              "imgAlt" : '광화시대 이미지'
+            }
+          ],
+        }
+      ]
+    },
     {
       "id" : "0",
       "title" : "Weekly UI Challenge",
@@ -138,4 +483,4 @@ const workData = {
   ]
 }
 
-module.exports = workData;
+export default workData;

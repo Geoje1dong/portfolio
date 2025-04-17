@@ -43,9 +43,9 @@ export default class Article extends React.Component{
     return(
       <React.Fragment>
         <Button  onMouseOver={this.articleMouseOver(article)}  onMouseOut={this._articleMouseOut} onClick={viewIsOpen} imgSize={article.imgSize}>
-          <ProjectLabel>{article.label} the project</ProjectLabel>
+          <ProjectLabel>{article.label}</ProjectLabel>
           
-          <img src={article.img} alt={article.title}/>
+          <Img src={article.img} alt={article.title} cover_type={article.cover_type === 'logo'}/>
           {/* <img src={article.img} alt={article.title}/> */}
           <ArticleTitle>
             {mobile ? article.title : title }
@@ -55,6 +55,10 @@ export default class Article extends React.Component{
     )
   }
 }
+
+const Img = styled.img`
+  ${props => props.cover_type ? `height:auto !important; width:256px !important;` : ``}
+`
 
 const Button = styled.button`
   padding:0;

@@ -62,10 +62,12 @@ export default class Resume extends React.Component{
           </Company>
           <Company>
             <h2>Project</h2>
-            {ResumeData.projectsData.map((project) => (
+            {ResumeData.projectsData.sort((a, b) => b.id - a.id).map((project) => (
               <li key={project.id}>
                 <div>
-                  <h3><a href={project.link} target='_blank' rel="noopener noreferrer">{project.title}</a></h3>
+                  {project.link ? <h3><a href={project.link} target='_blank' rel="noopener noreferrer">{project.title}</a></h3>
+                  : <h3>{project.title}</h3>}
+                  
                   <p>{project.period}</p>
                 </div>
                 <div>
@@ -83,12 +85,18 @@ export default class Resume extends React.Component{
                   </ol>
                   <h5>사용한 Skill 또는 지식</h5>
                   <p>{project.techstack}</p>
-                  <h5>결과/성과</h5>
-                  <p>
-                    {project.result.split('\n').map((result, index) => (
-                      <span key={index}>{result}<br /></span>
-                    ))}
-                  </p>
+                  {/* {
+                    project.result && (
+                      <>
+                      <h5>결과/성과</h5><p>
+                        {project.result.split('\n').map((result, index) => (
+                          <span key={index}>{result}<br /></span>
+                        ))}
+                      </p>
+                      </>
+                    )
+                  } */}
+                  
                 </div>
               </li>
             ))}            
