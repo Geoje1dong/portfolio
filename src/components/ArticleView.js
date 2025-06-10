@@ -172,11 +172,17 @@ const ContentImgType1 = ({ viewContent }) => {
           <ContentLi key={index}>
 
             {img.type === 'video' ? (
-              <video autoPlay loop muted playsInline>
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                style={img.imgAlt === '광화시대 테스트 이미지' ? { display: 'none' } : undefined}
+              >
                 <source src={img.imgUrl} type="video/mp4" />
               </video>
             ) : (
-            <img src={img.imgUrl} alt={img.imgAlt} />
+              <img src={img.imgUrl} alt={img.imgAlt} />
             )}
           </ContentLi>
         ))}
