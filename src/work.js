@@ -46,6 +46,7 @@ import todayDetail3 from './assets/images/today/17.png';
 import test1 from './assets/images/test/1.mp4';
 import test2 from './assets/images/test/2.mp4';
 import test3 from './assets/images/test/3.mp4';
+import seoulsu from './assets/images/test/seoulsu.mp4';
 
 const workData = {
   "results" :[
@@ -353,6 +354,10 @@ const workData = {
               "type" : 'video'
             },{
               "imgUrl" : test3,
+              "imgAlt" : '광화시대 테스트 이미지',
+              "type" : 'video'
+            }, {
+              "imgUrl" : seoulsu,
               "imgAlt" : '광화시대 테스트 이미지',
               "type" : 'video'
             }
