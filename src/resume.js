@@ -30,36 +30,6 @@ export default class Resume extends React.Component{
               <IntroText key={index} delay={0.3 * index}>{content}</IntroText>
             ))}
           </Intro>
-          <Company delay="1.5">
-            <h2>Work</h2>
-            {ResumeData.companysData.map((company)=> (
-              <li key={company.id}>
-                <div>
-                  <h3>{company.title}</h3>
-                  <p>{company.period}</p>
-                </div>
-                <div>
-                  {company.description.map((description, index) => (
-                    <p key={index}>{description}</p>
-                  ))}
-                </div>
-              </li>
-            ))}
-            {/* <li>
-              <p>한국산업정보사</p>
-              <div>
-                <p>웹에이전시 WEB Publisher</p>
-                <p>2015.10 ~ 2016.05</p>
-              </div>
-            </li>
-            <li>
-              <p>USSOFT</p>
-              <div>
-                <p>웹에이전시 GUI Designer</p>
-                <p>2014.07 ~ 2015.07</p>
-              </div>
-            </li> */}
-          </Company>
           <Company>
             <h2>Project</h2>
             {ResumeData.projectsData.sort((a, b) => b.id - a.id).map((project) => (
@@ -100,6 +70,36 @@ export default class Resume extends React.Component{
                 </div>
               </li>
             ))}            
+          </Company>
+          <Company delay="1.5">
+            <h2>Work</h2>
+            {ResumeData.companysData.map((company)=> (
+              <li key={company.id}>
+                <div>
+                  <h3>{company.title}</h3>
+                  <p>{company.period}</p>
+                </div>
+                <div>
+                  {company.description.map((description, index) => (
+                    <p key={index}>{description}</p>
+                  ))}
+                </div>
+              </li>
+            ))}
+            {/* <li>
+              <p>한국산업정보사</p>
+              <div>
+                <p>웹에이전시 WEB Publisher</p>
+                <p>2015.10 ~ 2016.05</p>
+              </div>
+            </li>
+            <li>
+              <p>USSOFT</p>
+              <div>
+                <p>웹에이전시 GUI Designer</p>
+                <p>2014.07 ~ 2015.07</p>
+              </div>
+            </li> */}
           </Company>
           <Company>
             <h2>SKILL</h2>
